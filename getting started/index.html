@@ -1,0 +1,54 @@
+<!--getting started-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #TouchTarget{
+        background-color: #900000;
+        color: white;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+    }
+    #widthTarget{
+        background-color: #2ee342;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        margin-top: 5px;
+
+    }
+
+</style>
+<script>
+      window.onload = function(){
+        document.getElementById('TouchTarget').addEventListener('click', respond);
+        document.getElementById('widthTarget').addEventListener('click', response);
+         }
+
+         function respond(e){
+            document.getElementById('TouchTarget').style.display = "none";
+            
+         }
+
+         function response(e1){
+            document.getElementById('widthTarget').style.width="500px";
+         }
+</script>
+<body>
+    <div id="TouchTarget">
+        <h1>Touch Me! to diasppear</h1>
+    </div>
+    <div id="widthTarget">
+        <h1> touch for width increase</h1>
+    </div>
+    
+</body>
+</html>
