@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output in the console</title>
+
+    <style>
+        body{
+            background-color: rgb(214, 221, 228);
+            display: block;
+            text-align: center;
+            color: #900000;
+
+        }
+        #buttontag{
+            height: 100px;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background-color: rgb(194, 55, 78);
+            color: whitesmoke;
+            font-weight: bolder;
+            font-size: large;
+
+        }
+    </style>
+
+    <script>
+       var clicks = 0;
+       window.onload = function(){
+        console.log("window.onload function is running");
+        document.getElementById('buttontag').addEventListener('click', sudhi);
+       }
+
+       function sudhi(){
+        clicks++;
+        console.log("Button pressed " + clicks + " times.")
+       }
+
+    </script>
+</head>
+<body>
+ 
+    <h1>check in the console to know how many times you have clicked the button</h1>
+    <button id="buttontag">click me</button>
+    
+</body>
+</html>
