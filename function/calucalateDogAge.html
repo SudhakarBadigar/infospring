@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculating Dogs Age</title>
+    <script>
+      
+      function DogsAge(humanAge){
+            var MyDogAge = humanAge * 7;
+            document.getElementById('DogAge').innerHTML += "<h1>" + MyDogAge + "</h1>";
+      }
+
+      function batsAge(atbats,hits,walk){
+        var batyear = hits/(atbats-walk);
+        document.getElementById('bats').innerHTML += batyear;
+      }
+
+      window.onload = function(){
+        DogsAge(6);
+        batsAge(22,79,10);
+
+      }
+
+    </script>
+</head>
+<body>
+    <div id="DogAge"><h1><u>calculated Dogs Age</u> </h1></div><br>
+    <div id="bats"> <h1><u>Calculated Bats Age</u></h1></div>
+
+
+    
+</body>
+</html>

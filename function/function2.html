@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal function2</title>
+
+    <script>
+        function greeting(){
+            document.getElementById('greet').innerHTML="<h1>Greetings for Normal function</h1>";
+        }
+
+        function great(){
+            var result= document.getElementById('mybutton');
+            result.innerHTML="<h2>greeting from button function onclick</h2>"
+        }
+
+        // window.onload=function(){
+        //     greeting();
+        // }
+    </script>
+</head>
+<body>
+    <div id="greet"></div>
+    <button id="mybutton" onclick="great()"> clicke me! </button>
+    
+</body>
+</html>
